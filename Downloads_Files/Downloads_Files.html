@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Central de Downloads</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#">
+
+                <i class="bi bi-cloud-arrow-down-fill"></i>
+
+                Central de Downloads
+
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <div class="container py-5">
+
+        <div class="text-center mb-5">
+
+            <h1 class="fw-bold">
+
+                Bem-vindo
+
+            </h1>
+
+            <p class="text-secondary">
+
+                Escolha a categoria desejada.
+
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                <div class="card categoria" onclick="abrirPagina('pdv')">
+
+                    <div class="card-body text-center">
+
+                        <i class="bi bi-pc-display categoria-icon"></i>
+
+                        <h5>PDV</h5>
+
+                        <small>Sistemas PDV</small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                <div class="card categoria" onclick="abrirPagina('tef')">
+
+                    <div class="card-body text-center">
+
+                        <i class="bi bi-credit-card categoria-icon"></i>
+
+                        <h5>TEF</h5>
+
+                        <small>Pagamentos</small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                <div class="card categoria" onclick="abrirPagina('drivers')">
+
+                    <div class="card-body text-center">
+
+                        <i class="bi bi-cpu categoria-icon"></i>
+
+                        <h5>Drivers</h5>
+
+                        <small>Periféricos</small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                <div class="card categoria" onclick="abrirPagina('manuais')">
+
+                    <div class="card-body text-center">
+
+                        <i class="bi bi-journal-text categoria-icon"></i>
+
+                        <h5>Manuais</h5>
+
+                        <small>PDFs</small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                <div class="card categoria" onclick="abrirPagina('utilitarios')">
+
+                    <div class="card-body text-center">
+
+                        <i class="bi bi-tools categoria-icon"></i>
+
+                        <h5>Utilitários</h5>
+
+                        <small>Ferramentas</small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                <div class="card categoria" onclick="abrirPagina('android')">
+
+                    <div class="card-body text-center">
+
+                        <i class="bi bi-android2 categoria-icon"></i>
+
+                        <h5>Android</h5>
+
+                        <small>APK's</small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+
+                <div class="card categoria" onclick="abrirPagina('windows')">
+
+                    <div class="card-body text-center">
+
+                        <i class="bi bi-windows categoria-icon"></i>
+
+                        <h5>Windows</h5>
+
+                        <small>Aplicativos</small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <footer class="bg-dark text-white text-center p-3">
+
+        © 2026 - Central de Downloads
+
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
