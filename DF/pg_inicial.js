@@ -1,4 +1,7 @@
+console.log("JavaScript carregado!");
+
 function abrirPagina(pagina) {
+    console.log("Abrindo:", pagina);
     window.location.href = pagina;
 }
 
