@@ -1,0 +1,176 @@
+body {
+    background: red !important;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #222;
+}
+
+header {
+    background: #0d6efd;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+main h2 {
+    margin-bottom: 10px;
+}
+
+main p {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.categorias {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Botões */
+
+button {
+    position: relative;
+    margin: 0;
+    padding: 25px 20px;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: #fff;
+    border: 1px solid rgba(22, 76, 167, 0.6);
+    border-radius: 10px;
+    color: #1d89ff;
+    font-weight: 400;
+    font-family: inherit;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+button span {
+    color: #164ca7;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    z-index: 2;
+}
+
+button i {
+    font-size: 28px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+button:hover {
+    animation: rotate624 0.7s ease-in-out both;
+}
+
+button:hover span {
+    animation: storm1261 0.7s ease-in-out both;
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 155px;
+    left: -75px;
+    top: -50px;
+    background: #38ef7d;
+    opacity: 0.4;
+    transform: rotate(35deg);
+    transition: 550ms;
+}
+
+button:hover::after {
+    left: 120%;
+}
+
+/* Animações */
+
+@keyframes rotate624 {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(3deg);
+    }
+
+    50% {
+        transform: rotate(-3deg);
+    }
+
+    75% {
+        transform: rotate(1deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes storm1261 {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(4px);
+    }
+
+    50% {
+        transform: translateX(-3px);
+    }
+
+    75% {
+        transform: translateX(2px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+}
+
+/* Celular */
+
+@media (max-width: 700px) {
+    .categorias {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .categorias {
+        grid-template-columns: 1fr;
+    }
+}
